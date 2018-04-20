@@ -1,0 +1,76 @@
+{
+  "addr:housenumber": {
+    "custom_value": true
+  },
+  "addr:village": {
+    "custom_value": true
+  },
+  "building": {
+	"select_multiple": false,
+    "required": true,
+    "custom_value": true
+  },
+  "building:material": {
+    "hide_if": {
+      "building": "none"
+    },
+    "select_multiple": true,
+    "custom_value": true
+  },
+  "building:levels": {
+    "hide_if": {
+      "building": "none"
+    },
+    "select_multiple": false,
+    "numeric": true,
+    "custom_value": true
+  },
+  "building:roof": {
+    "select_multiple": true,
+    "custom_value": true
+  },
+  "building:units": {
+	"select_multiple": false,
+    "numeric": true,
+    "custom_value": true
+  },
+  "building:population": {
+	"show_if": {
+		"residential_details": "yes"
+	},
+	"select_multiple": false,
+    "numeric": true,
+    "custom_value": true
+  },
+  "building:rooms": {
+	"show_if": {
+		"residential_details": "yes"
+	},
+	"select_multiple": false,
+    "numeric": true,
+    "custom_value": true
+  },
+  "building:rooms_painted": {
+	"show_if": {
+		"residential_details": "yes"
+	},
+	"select_multiple": false,
+    "numeric": true,
+    "custom_value": true
+  },
+  "building:sleeping_spaces": {
+	"show_if": {
+		"residential_details": "yes"
+	},
+	"select_multiple": false,
+    "numeric": true,
+    "custom_value": true
+  },
+  "width": {
+    "numeric": true,
+    "custom_value": true
+  },
+  "source": {
+    "implicit": "survey"
+  }
+}
